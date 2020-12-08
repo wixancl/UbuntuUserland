@@ -41,5 +41,9 @@ apt-get install mlocate -y
 apt-get install moreutils -y
 apt-get install mplayer -y
 apt-get install htop -y
+#Instalacion de python y aplicativos
 apt-get install python3 -y
 apt-get install python3-pip -y
+#instalacion de reportlab para python
+
+
