@@ -1,3 +1,8 @@
+apt-get update
+apt-get upgrade -y
+apt-get install iputils-ping -y
+apt-get install net-tools -y
+apt-get install netstat -y
 apt-get install apg 
 apt-get install bmon 
 apt-get isntall bsdmainutils 
@@ -32,3 +37,6 @@ apt-get install mc
 apt-get install mlocate
 apt-get install moreutils
 apt-get install mplayer
+apt-get install htop
+apt-get install python3 -y
+apt-get install python3-pip -y
