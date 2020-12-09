@@ -31,7 +31,11 @@ apt-get install arp-scan -y
 #
 
 
-
+#Instalacion de Aplicativos de Correo 
+#
+apt-get install sendmail -y
+#
+apt-get install mutt -y
 
 
 
