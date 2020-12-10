@@ -37,7 +37,9 @@ apt-get install sendmail -y
 #
 apt-get install mutt -y
 
-
+#Intalacion de aplicaciones para automatizacion
+#
+apt-get install cron
 
 apt-get install speex -y
 apt-get install apg -y
