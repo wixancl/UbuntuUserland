@@ -3,14 +3,30 @@ echo "Configuracion Terminal"
 echo " Configuracion de color "
 setterm -foreground white -background black
 clear
-mkdir -p crondir
-chmod 777 crondir
-# archivo Existe ?
-if [ -f /crondir/01.sh ];
+
+date_stamp=$(date +"%Y_%m_%d_%H_%M_%S")
+
+
+
+
+# directorio existe ?
+if [ -d /crondir ];
 then
-	echo "Existe archivo"
+	echo "El Directorio crondir  exsite no se ha realizado ningun cambio"
 else
-	echo "No Existe"
-	echo " " > 001.sh
+	echo "El Directorio crondir no existe. se procede a crear"
+	mkdir -p crondir
+	chmod 777 crondir
 fi
+
+# archivo Existe ?
+if [ -f crondir/$date_stamp.sh ];
+then
+	echo "El archivo existe"
+else
+	echo "El archivo no existe. se procede a crear"
+	echo " " > crondir/$date_stamp.sh
+	chmod 777 crondir/$date_stamp.sh
+fi
+
 

@@ -78,6 +78,8 @@ apt-get install htop -y
 #Instalacion de python y aplicativos
 apt-get install python3 -y
 apt-get install python3-pip -y
+apt-get install python3-psutil -y
+apt-get install python3-twisted -y
 #instalacion de reportlab para Python3
 
 
