@@ -4,9 +4,8 @@ echo " Configuracion de color "
 setterm -foreground white -background black
 clear
 
+# Se crea variable de tiempo Fecha/Hora
 date_stamp=$(date +"%Y_%m_%d_%H_%M_%S")
-
-
 
 
 # directorio existe ?
