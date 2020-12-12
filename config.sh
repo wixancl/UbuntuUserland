@@ -66,6 +66,15 @@ else
 	chmod 777 ~/.mutt/certificates
 fi
 
+# archivo ~/.mutt/muttrc existe ?
+if [ -f   ~/.mutt/muttrc ];
+then
+	echo "El Directorio  ~/.mutt/muttrc existe no se ha realizado ningun cambio"
+else
+	echo "El Directorio  ~/.mutt/muttrc no existe. se procede a crear"
+	touch  ~/.mutt/muttrc
+	chmod 777 ~/.mutt/muttrc
+fi
 
 
 ###########################################################################################################################
