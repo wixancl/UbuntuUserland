@@ -56,6 +56,16 @@ else
 	chmod 777 ~/.mutt/cache/bodies 
 fi
 
+# archivo ~/.mutt/certificates existe ?
+if [ -f  ~/.mutt/certificates ];
+then
+	echo "El Directorio ~/.mutt/certificates existe no se ha realizado ningun cambio"
+else
+	echo "El Directorio ~/.mutt/certificates no existe. se procede a crear"
+	mkdir -p ~/.mutt/certificates
+	chmod 777 ~/.mutt/certificates
+fi
+
 
 
 ###########################################################################################################################
