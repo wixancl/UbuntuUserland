@@ -4,7 +4,7 @@ read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 
 apt-get update
 apt-get upgrade -y
 # Instalacion de utilidad de Red
-#
+# Solicitud de eco
 apt-get install fping
 #
 apt-get install iputils-ping -y
