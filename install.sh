@@ -1,9 +1,15 @@
 echo "Instalacion Preliminar"
 read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
+######################################################################################################################
 # Actualizar Servidor
 apt-get update
 apt-get upgrade -y
-# Instalacion de utilidad de Red
+
+
+
+######################################################################################################################
+## Instalacion de utilidad de Red
+
 # Solicitud de eco
 apt-get install fping
 #
@@ -29,6 +35,7 @@ apt-get install fping -y
 #
 apt-get install arp-scan -y
 #
+
 
 
 #Instalacion de Aplicativos de Correo 
