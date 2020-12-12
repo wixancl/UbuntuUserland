@@ -62,7 +62,7 @@ then
 	echo "El Directorio ~/.mutt/certificates existe no se ha realizado ningun cambio"
 else
 	echo "El Directorio ~/.mutt/certificates no existe. se procede a crear"
-	mkdir -p ~/.mutt/certificates
+	touch ~/.mutt/certificates
 	chmod 777 ~/.mutt/certificates
 fi
 
