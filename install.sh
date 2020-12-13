@@ -8,13 +8,38 @@ apt-get upgrade -y
 
 
 ######################################################################################################################
-## Instalacion de utilidad de Red
-read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
+# Instalacion de utilidad de Red
 
-apt-get install fping
-#
+# Solicitude de echo 
+# Ejemplo : ping 192.168.0.1
 apt-get install iputils-ping -y
 #
+
+# Solicitudes de echo ICMP (Protocolo de mensajes de control de internet)
+# Ejemplo : fping 192.168.0.1 192.168.0.2
+# Ejemplo : fping -g -r 1 192.168.0.0/24
+# Ejemplo : fping -s -g 192.168.0.1 192.168.0.9
+apt-get install fping
+#
+
+# Utilidades de RED
+#
+# arp : utilizada para manipular la cache ARP del nucleo, usualmente para anadir, borrar o volcar la cache completa 
+# Ejemplo : arp 192.168.1.1
+#
+# dnsdomainname : muestra el nombre del dominio DNS del sistema 
+# Ejemplo : dnsdomainname -I
+# Ejemplo : dnsdomainname -s
+#
+# domainname : muestra o establece el nombre de dominio NIS/YP del sistema
+# Ejemplo : domainname -I
+# Ejmeplo : domainname -s
+#
+# hostname : muestra o establece el nombre del sistema
+# Ejemplo : hostname
+#
+# ifconfig : utilidad para configurar las interfaces de red
+# Ejemplo : ifconfig
 apt-get install net-tools -y
 #
 apt-get install netstat -y
