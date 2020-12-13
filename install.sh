@@ -40,9 +40,33 @@ apt-get install fping
 #
 # ifconfig : utilidad para configurar las interfaces de red
 # Ejemplo : ifconfig
+# Ejemplo : ifconfig wlan0
+# Nota : por configuraciones del servidor en android muchas opciones no estan permitidas 
+#
+# netstat : muestra las conexiones de red, tablas de encaminamiento y estadisticas de la interfaces
+# Ejemplo : netstat
+# Ejemplo : netstat -c
+# Ejemplo : netstat -i -a
+#
+# route : utilizado para manipular la tabla de encaminamiento IP
+# Ejemplo : route
+# Ejemplo : route -h
+#
+# slattach : utilizado para conectar una inteface de red a una linea serie . Permite usar lineas de terminales normales  para crear enlaces punto a punto con otras computadoras
+# Ejemplo : ?
 apt-get install net-tools -y
 #
+# netstat : muestra las conexiones de red, tablas de encaminamiento y estadisticas de la interfaces
+# Ejemplo : netstat
+# Ejemplo : netstat -c
+# Ejemplo : netstat -i -a
+#
 apt-get install netstat -y
+#
+# ifstart : muestra el consumo de ancho de banda de la red y la velocidad a intervalos regulares
+# Ejemplo : ifstat
+# Ejemplo : ifstat -S
+apt-get install ifstat
 #
 apt-get install speedometer -y
 #
