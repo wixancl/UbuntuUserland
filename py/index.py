@@ -37,10 +37,12 @@ print(formatofecha)
 #
 
 #Crear log
-file = open("log.txt", "w")
-file.write(" 1 " + os.linesep)
-file.write(" 2 ")
+nombrelog = now.strftime('%Y%m%d_%H%M%S.txt')
+file = open(nombrelog, "w")
+file.write(" Nombre : " + nombrelog  + os.linesep)
+file.write("-------------------------------------------------------------------------------------------------- " + os.linesep)
 file.close()
+
 
 
 
