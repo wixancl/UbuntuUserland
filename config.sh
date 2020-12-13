@@ -76,9 +76,32 @@ else
 	chmod 777 ~/.mutt/muttrc
 fi
 
+# crear configuracion de 
+
+
+echo "set ssl_starttls=yes " >>  ~/.mutt/muttrc
+echo "set ssl_force_tls=yes" >>  ~/.mutt/muttrc
+ 
+echo "set imap_user =\'pon_aquí_tu_dirección_de_correo@gmail.com\'" >>  ~/.mutt/muttrc
+echo "set imap_pass = 'PASSWORD'" >>  ~/.mutt/muttrc
+
+echo "set from=\'pon_aquí_tu_dirección_de_correo@gmail.com\'" >>  ~/.mutt/muttrc
+echo "set realname='Tu nombre real'" >>  ~/.mutt/muttrc
+
+echo "set folder = imaps://imap.gmail.com/" >>  ~/.mutt/muttrc
+echo "set spoolfile = imaps://imap.gmail.com/INBOX" >>  ~/.mutt/muttrc
+echo "set postponed=\"imaps://imap.gmail.com/[Gmail]/Drafts\"" >>  ~/.mutt/muttrc
+
+echo "set header_cache = \"~/.mutt/cache/headers\"" >>  ~/.mutt/muttrc
+echo "set message_cachedir = \"~/.mutt/cache/bodies\"" >>  ~/.mutt/muttrc
+echo "set certificate_file = \"~/.mutt/certificates\"" >>  ~/.mutt/muttrc
+
+echo "set smtp_url = \'smtps://pon_aquí_tu_dirección_de_correo@gmail.com:PASSWORD@smtp.gmail.com:4/\'" >>  ~/.mutt/muttrc
+
+echo "set move = no" >>  ~/.mutt/muttrc
+echo "set imap_keepalive = 900 " >>  ~/.mutt/muttrc
 
 ###########################################################################################################################
-
 
 
 

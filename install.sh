@@ -9,8 +9,8 @@ apt-get upgrade -y
 
 ######################################################################################################################
 ## Instalacion de utilidad de Red
+read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
 
-# Solicitud de eco
 apt-get install fping
 #
 apt-get install iputils-ping -y
