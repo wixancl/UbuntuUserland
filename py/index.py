@@ -1,6 +1,9 @@
 # Importar dependencias para manejo del sistema operativo
 import os
 
+# Importar codigo QR
+import qrcode
+
 #importar dependencias para el manejo de fechas
 from datetime import date
 from datetime import datetime
@@ -43,6 +46,7 @@ file.write(" Nombre : " + nombrelog  + os.linesep)
 file.write("-------------------------------------------------------------------------------------------------- " + os.linesep)
 file.close()
 
-
+#Crear QR
+imagen = qrcode.make('holamundo')
 
 

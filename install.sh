@@ -136,6 +136,12 @@ apt-get install python3 -y
 apt-get install python3-pip -y
 apt-get install python3-psutil -y
 apt-get install python3-twisted -y
-#instalacion de reportlab para Python3
+#instalacion repositorios para generar codigos QR
+apt-get install python-setuptools
+
+pip3 install qrcode
+# pip install --user qrcode
+pip3 install pillow
+
 
 
