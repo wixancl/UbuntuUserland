@@ -144,4 +144,9 @@ pip3 install qrcode
 pip3 install pillow
 
 
+# 
+apt-get install zip -y
+apt-get install ncftp -y
+apt-get install ftp -y
+
 
