@@ -1,9 +1,10 @@
 # Se crea variable de tiempo Fecha/Hora
 date_stamp=$(date +"%Y_%m_%d_%H_%M_%S")
 # Directorio a Respaldar
-directorio="/home/administrador/SH/py"
-###########################################################################################################################
+directorio="/var/log/apt"
+
 #Configuracion para Crontab
+
 # directorio existe ?
 if [ -d /archivos ];
 then
@@ -20,8 +21,7 @@ then
 	echo "El archivo existe"
 else
 	echo "El archivo no existe. se procede a crear"
-	#echo " " > crondir/$date_stamp.sh
-	#chmod 777 crondir/$date_stamp.sh
 	zip -r archivos/$date_stamp.zip $directorio
+#	ncftpput -f login.txt / /home/administrador/SH/aplicaciones/archivos/$date_stamp.zip
 fi
 
