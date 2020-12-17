@@ -1,5 +1,5 @@
 # Se crea variable de tiempo Fecha/Hora
-date_stamp=$(date +"%Y_%m_%d_%H_%M_%S")
+date_stamp=$(date +"%Y%m%d%H%M%S")
 # Directorio a Respaldar
 directorio="/var/log/apt"
 
@@ -22,6 +22,8 @@ then
 else
 	echo "El archivo no existe. se procede a crear"
 	zip -r archivos/$date_stamp.zip $directorio
-#	ncftpput -f login.txt / /home/administrador/SH/aplicaciones/archivos/$date_stamp.zip
+	touch archivos/$date_stamp.txt
+	chmod 777 archivos/$date_stamp.zip
+	ncftpput -f login.txt / /home/administrador/SH/aplicaciones/archivos/$date_stamp.txt
 fi
 
