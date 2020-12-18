@@ -24,6 +24,6 @@ else
 	zip -r archivos/$date_stamp.zip $directorio
 	touch archivos/$date_stamp.txt
 	chmod 777 archivos/$date_stamp.zip
-	ncftpput -f login.txt / /home/administrador/SH/aplicaciones/archivos/$date_stamp.txt
+#	ncftpput -f login.txt / /home/administrador/SH/aplicaciones/archivos/$date_stamp.txt
 fi
 
