@@ -34,6 +34,31 @@ fi
 ###########################################################################################################################
 
 ###########################################################################################################################
+#Configuracion para variables
+# directorio /var/config existe ?
+if [ -d /var/config ];
+then
+	echo "El Directorio config  existe no se ha realizado ningun cambio"
+else
+	echo "El Directorio crondir no existe. se procede a crear"
+	mkdir -p /var/config
+	chmod 777 /var/configcrondir
+fi
+
+# directorio /var/log existe ?
+if [ -d /var/config/log ];
+then
+	echo "El Directorio log  existe no se ha realizado ningun cambio"
+else
+	echo "El Directorio log no existe. se procede a crear"
+	mkdir -p /var/config/log
+	chmod 777 /var/config/log
+fi
+
+###########################################################################################################################
+
+
+###########################################################################################################################
 #Configuracion para Mutt
 # directorio ~/.mutt/cache/headers existe ?
 if [ -d ~/.mutt/cache/headers ];

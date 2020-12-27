@@ -1,20 +1,25 @@
 echo "Instalacion Preliminar"
 read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
 ######################################################################################################################
+######################################################################################################################
 # Actualizar Servidor
 apt-get update
 apt-get upgrade -y
-
+######################################################################################################################
+######################################################################################################################
 
 
 ######################################################################################################################
+######################################################################################################################
 # Instalacion de utilidad de Red
 
+######################################################################################################################
 # Solicitude de echo 
 # Ejemplo : ping 192.168.0.1
 apt-get install iputils-ping -y
 #
 
+######################################################################################################################
 # Solicitudes de echo ICMP (Protocolo de mensajes de control de internet)
 # Ejemplo : fping 192.168.0.1 192.168.0.2
 # Ejemplo : fping -g -r 1 192.168.0.0/24
@@ -22,6 +27,7 @@ apt-get install iputils-ping -y
 apt-get install fping
 #
 
+######################################################################################################################
 # Utilidades de RED
 #
 # arp : utilizada para manipular la cache ARP del nucleo, usualmente para anadir, borrar o volcar la cache completa 
@@ -56,6 +62,8 @@ apt-get install fping
 # Ejemplo : ?
 apt-get install net-tools -y
 #
+
+######################################################################################################################
 # netstat : muestra las conexiones de red, tablas de encaminamiento y estadisticas de la interfaces
 # Ejemplo : netstat
 # Ejemplo : netstat -c
@@ -63,35 +71,85 @@ apt-get install net-tools -y
 #
 apt-get install netstat -y
 #
+
+######################################################################################################################
 # ifstart : muestra el consumo de ancho de banda de la red y la velocidad a intervalos regulares
 # Ejemplo : ifstat
 # Ejemplo : ifstat -S
 apt-get install ifstat
 #
+
+######################################################################################################################
 apt-get install speedometer -y
 #
+
+######################################################################################################################
 apt-get install whois -y
 #
+
+######################################################################################################################
 apt-get install netselect -y
 #
+
+######################################################################################################################
 apt-get install bmon -y
 #
+
+######################################################################################################################
 apt-get install nmap -y
 #
+
+######################################################################################################################
 apt-get install netselect -y
 #
+
+######################################################################################################################
 apt-get install fping -y
 #
+
+######################################################################################################################
 apt-get install arp-scan -y
 #
 
+######################################################################################################################
+# ftp 
+apt-get install ftp -y
+#
 
+######################################################################################################################
+# ncftp : Transferencia de archivos por ftp
+# Ejemplo : ncftpput -f login.txt / /rutadearchivo/archivoatransferir.txt
+# Ejemplo : ncftpget -f login.txt /rutadearchivo/ /archivoatransferir.txt
+# Ejmeplo archivo login.txt
+#
+#host 192.168.1.1
+#user admin
+#pass 12345
+#
+apt-get install ncftp -y 
 
+######################################################################################################################
+######################################################################################################################
 #Instalacion de Aplicativos de Correo 
 #
+# sendmail : envio rapido de correo 
+# Ejemplo :
+# sendmail correo@correo.cl
+# To: otrocorreo@correo.cl
+# From: correodeenvio@correo.cl
+# Subject: correo de prueba
+# Hola mundo
+
 apt-get install sendmail -y
+apt-get install mailutils -y
+apt-get install sendmail-bin -y
+apt-get install ssmtp -y
 #
+
 apt-get install mutt -y
+#
+
+
 
 #Intalacion de aplicaciones para automatizacion
 #
