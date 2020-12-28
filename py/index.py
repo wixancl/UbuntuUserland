@@ -2,7 +2,7 @@
 import os
 
 # Importar codigo QR
-import qrcode
+#import qrcode
 
 #importar dependencias para el manejo de fechas
 from datetime import date
@@ -47,6 +47,6 @@ file.write("--------------------------------------------------------------------
 file.close()
 
 #Crear QR
-imagen = qrcode.make('holamundo')
+#imagen = qrcode.make('holamundo')
 
 
