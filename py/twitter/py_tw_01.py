@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+X#!/usr/bin/env python
 import tweepy
 
 #Coloca dentro de las comillas tus claves...
