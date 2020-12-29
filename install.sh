@@ -1,4 +1,4 @@
-echo "Instalacion Preliminar"
+echo "Instalacion PrelXiminar"
 read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
 ######################################################################################################################
 ######################################################################################################################
@@ -170,7 +170,9 @@ apt-get install keyboard-configuration -y
 
 apt-get install tmux -y
 apt-get install tree -y
+apt-get install vi -y
 apt-get install vim -y
+apt-get install nano -y
 apt-get install xxd -y
 apt-get install cpp -y
 apt-get install wamerican -y
