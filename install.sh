@@ -81,6 +81,9 @@ apt-get install netstat -y
 # pacman : instalacion de paquetes pacman
 #
 apt-get install pacman
+apt-get install aptitude
+apt-get install symaptic
+
 
 ######################################################################################################################
 # 
