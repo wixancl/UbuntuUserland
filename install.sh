@@ -78,6 +78,16 @@ apt-get install netstat -y
 #
 
 ######################################################################################################################
+# pacman : instalacion de paquetes pacman
+#
+apt-get install pacman
+
+######################################################################################################################
+# 
+#
+
+
+######################################################################################################################
 # ifstart : muestra el consumo de ancho de banda de la red y la velocidad a intervalos regulares
 # Ejemplo : ifstat
 # Ejemplo : ifstat -S
