@@ -54,15 +54,15 @@ class Menu():
 
     def print_case(self,value):
         cases = {
-            1: lambda: print("1"),
-            2: lambda: print("2"),
+            1: lambda: print("esta es la opcion 1"),
+            2: lambda: print("esta es la opcion 2"),
                 }
         cases.get(value, lambda: print("no es opcion"))()
 
         
 
 MenuPrincipal=Menu()
-MenuPrincipal.print_case("S python 1")
+MenuPrincipal.print_case(1)
 
 
 ##############################################################################################################################
