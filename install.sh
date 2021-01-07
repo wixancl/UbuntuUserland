@@ -104,10 +104,12 @@ apt-get install ifstat
 apt-get install speedometer -y
 #
 
+apt-get install slurm
 apt-get install nethogs
 apt-get install iftop
 apt-get install vnstat
 apt-get install nload
+apt-get install wavemon
 
 ######################################################################################################################
 apt-get install whois -y
