@@ -98,8 +98,16 @@ apt-get install ifstat
 #
 
 ######################################################################################################################
+# speedometer : monitorea y mide el ancho de banda de la red
+# Ejemplo : speedometer
+# Ejmeplo : speedometer -p
 apt-get install speedometer -y
 #
+
+apt-get install nethogs
+apt-get install iftop
+apt-get install vnstat
+apt-get install nload
 
 ######################################################################################################################
 apt-get install whois -y
