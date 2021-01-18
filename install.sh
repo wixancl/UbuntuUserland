@@ -1,10 +1,6 @@
 echo "Instalacion PrelXiminar"
 read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
 
-
-
-
-
 ######################################################################################################################
 ######################################################################################################################
 # Actualizar Servidor
@@ -104,7 +100,12 @@ apt-get install ifstat
 apt-get install speedometer -y
 #
 
+######################################################################################################################
+# slurm :
+
 apt-get install slurm
+
+
 apt-get install nethogs
 apt-get install iftop
 apt-get install vnstat
