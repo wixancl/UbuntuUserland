@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####################################################################################################################
-#read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
+read -rsp $'Presione cualquier tecla o espere 5 segundos para continuar  \n' -n 1 -t 5;
 
 
 # definir variables para fecha y tiempo
