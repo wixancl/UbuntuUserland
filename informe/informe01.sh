@@ -1,4 +1,4 @@
-#!/bin/bash
+:#!/bin/bash
 #!/bin/sh
 
 FECHA_Y_HORA=`date "+%d-%m-%y_%H-%M-%S"`
